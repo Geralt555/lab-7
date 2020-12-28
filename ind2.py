@@ -35,9 +35,9 @@ if __name__ == '__main__':
           " нулевыми элементами равно:", m)
     b = []
     for i in range(len(a)):
-        if a[i] % 2 == 1:
+        if i % 2 == 0:
             b.append(a[i])
     for i in range(len(a)):
-        if a[i] % 2 == 0:
+        if i % 2 == 1:
             b.append(a[i])
     print(*b)
