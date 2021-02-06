@@ -34,10 +34,10 @@ if __name__ == '__main__':
     print("Произведение элементов списка, расположенных между первым и вторым"
           " нулевыми элементами равно:", m)
     b = []
-    for i in range(len(a)):
+    for i, x in enumerate(a):
         if i % 2 == 0:
-            b.append(a[i])
-    for i in range(len(a)):
+            b.append(x)
+    for i, x in enumerate(a):
         if i % 2 == 1:
-            b.append(a[i])
+            b.append(x)
     print(*b)
